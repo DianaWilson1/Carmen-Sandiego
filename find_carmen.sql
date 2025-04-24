@@ -23,3 +23,24 @@ SELECT city.name
 FROM city
 JOIN country ON city.countrycode = country.code
 WHERE country.name = 'Italy' AND city.name != 'Italy';
+
+SELECT name, countrycode
+FROM city
+WHERE name LIKE 'Florenc%';
+
+SELECT name
+FROM country
+WHERE code = 'COL';
+
+SELECT city.name
+FROM city
+JOIN country ON city.id = country.capital
+WHERE country.name = 'Colombia';
+
+SELECT name, countrycode, population
+FROM city
+WHERE population = 91085;
+
+SELECT name
+FROM country
+WHERE code = 'AUS';
